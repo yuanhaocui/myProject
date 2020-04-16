@@ -53,7 +53,7 @@ $(document).on('copy', function () {
 function initTips() {
     $.ajax({
         cache: true,
-        url: "https://cdn.jsdelivr.net/gh/q-mona/live2d@1.3/live2d/live2d/message.json",
+        url: "https://cdn.jsdelivr.net/gh/yuanhaocui/myProject@1.0/live2d/message.json",
         dataType: "json",
         success: function (result) {
             $.each(result.mouseover, function (index, tips) {
@@ -88,11 +88,11 @@ initTips();
         var domain = referrer.hostname.split('.')[1];
 
         if (domain == 'baidu') {
-            text = '嗨！ 来自 百度搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 mona的个人博客 」</span>';
+            text = '嗨！ 来自 百度搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 爆炸峰的个人博客 」</span>';
         } else if (domain == 'so') {
-            text = '嗨！ 来自 360搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 mona的个人博客 」</span>';
+            text = '嗨！ 来自 360搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 爆炸峰的个人博客 」</span>';
         } else if (domain == 'google') {
-            text = '嗨！ 来自 谷歌搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 mona的个人博客 」</span>';
+            text = '嗨！ 来自 谷歌搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 爆炸峰的个人博客 」</span>';
         }
     } else {
         var day = (new Date()).getDate();
@@ -114,7 +114,7 @@ initTips();
         else if (date == '12-25')
             text = '圣诞快乐 一年又要过去了呢';
         else
-            text = '欢迎阅读<span style="color:#0099cc;">「 mona的个人博客 」</span>';
+            text = '欢迎阅读<span style="color:#0099cc;">「 爆炸峰的个人博客 」</span>';
     }
     showMessage(text, 12000);
 })();
